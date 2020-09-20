@@ -1,0 +1,100 @@
+Tokyo, Japan
+Toronto, Ontario
+London, United Kingdom
+San Francisco, California
+New York, United States
+Los Angeles, California
+Singapore, Singapore
+Boston, Massachusetts
+Paris, Ile-de-France
+Sydney, NSW
+Chicago, Illinois
+Seoul, South Korea
+Dallas-Fort Worth, Texas
+Berlin, Germany
+Seattle, Washington
+Melbourne, VIC
+Houston, Texas
+Amsterdam, Netherlands
+Vienna, Austria
+Atlanta, Georgia
+Munich, Germany
+Montreal, Quebec
+San Diego, California
+Washington DC, District of Columbia
+Vancouver, British Columbia
+Miami, Florida
+Hong Kong, China
+Stockholm, Sweden
+Austin, Texas
+Barcelona, Spain
+Denver, Colorado
+Philadelphia, Pennsylvania
+Dubai, United Arab Emirates
+Manchester, United Kingdom
+Shanghai, China
+Oslo, Norway
+Beijing, China
+Madrid, Spain
+Copenhagen, Denmark
+Milan, Italy
+Portland, Oregon
+Hamburg, Germany
+Oakland, California
+Tel Aviv, Israel
+Osaka, Osaka
+Helsinki, Finland
+Rome, Italy
+Moscow, Russia
+Dublin, Ireland
+Orlando, Florida
+Las Vegas, Nevada
+Baltimore, Maryland
+Istanbul, Turkey
+Brisbane, QLD
+Shenzhen, Guangdong
+Frankfurt, Germany
+Stuttgart, Germany
+Quebec, Canada
+Sacramento, California
+Taipei, Taiwan
+Minneapolis-St Paul, Minnesota
+Athens, Greece
+Prague, Central Bohemian Region
+Kyoto, Japan
+Dusseldorf, Germany
+Lyon, Rhone-Alpes
+Santa Ana-Anaheim, California
+Busan, South Korea
+Abu Dhabi, United Arab Emirates
+Leipzig, Germany
+Tampa, Florida
+Cologne, Germany
+Mexico City, Mexico
+Budapest, Hungary
+Pittsburgh, Pennsylvania
+Brussels, Belgium
+Raleigh-Durham, North Carolina
+Kansas City, MI
+Sao Paulo, Brazil
+Detroit, Michigan
+Phoenix, Arizona
+Buenos Aires, Argentina
+Salt Lake City, Utah
+Nashville, Tennessee
+Zurich, Switzerland
+Calgary, Alberta
+Newark, New Jersey
+Riverside, California
+Edinburgh, United Kingdom
+Lisbon, Portugal
+Providence, Rhode Island
+Mumbai, Maharashtra
+St Petersburg, Russia
+Albuquerque, New Mexico
+Glasgow, United Kingdom
+Auckland, Greater Auckland
+Memphis, Tennessee
+Richmond, Virginia
+Kuala Lumpur, Malaysia
+Wellington, New Zealand
