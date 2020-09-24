@@ -1,100 +1,95 @@
-Tokyo, Japan
-Toronto, Ontario
-London, United Kingdom
-San Francisco, California
-New York, United States
-Los Angeles, California
-Singapore, Singapore
-Boston, Massachusetts
-Paris, Ile-de-France
-Sydney, NSW
-Chicago, Illinois
-Seoul, South Korea
-Dallas-Fort Worth, Texas
-Berlin, Germany
-Seattle, Washington
-Melbourne, VIC
-Houston, Texas
-Amsterdam, Netherlands
-Vienna, Austria
-Atlanta, Georgia
-Munich, Germany
-Montreal, Quebec
-San Diego, California
-Washington DC, District of Columbia
-Vancouver, British Columbia
-Miami, Florida
-Hong Kong, China
-Stockholm, Sweden
-Austin, Texas
-Barcelona, Spain
-Denver, Colorado
-Philadelphia, Pennsylvania
-Dubai, United Arab Emirates
-Manchester, United Kingdom
-Shanghai, China
-Oslo, Norway
-Beijing, China
-Madrid, Spain
-Copenhagen, Denmark
-Milan, Italy
-Portland, Oregon
-Hamburg, Germany
-Oakland, California
-Tel Aviv, Israel
-Osaka, Osaka
-Helsinki, Finland
-Rome, Italy
-Moscow, Russia
-Dublin, Ireland
-Orlando, Florida
-Las Vegas, Nevada
-Baltimore, Maryland
-Istanbul, Turkey
-Brisbane, QLD
-Shenzhen, Guangdong
-Frankfurt, Germany
-Stuttgart, Germany
-Quebec, Canada
-Sacramento, California
-Taipei, Taiwan
-Minneapolis-St Paul, Minnesota
-Athens, Greece
-Prague, Central Bohemian Region
-Kyoto, Japan
-Dusseldorf, Germany
-Lyon, Rhone-Alpes
-Santa Ana-Anaheim, California
-Busan, South Korea
-Abu Dhabi, United Arab Emirates
-Leipzig, Germany
-Tampa, Florida
-Cologne, Germany
-Mexico City, Mexico
-Budapest, Hungary
-Pittsburgh, Pennsylvania
-Brussels, Belgium
-Raleigh-Durham, North Carolina
-Kansas City, MI
-Sao Paulo, Brazil
-Detroit, Michigan
-Phoenix, Arizona
-Buenos Aires, Argentina
-Salt Lake City, Utah
-Nashville, Tennessee
-Zurich, Switzerland
-Calgary, Alberta
-Newark, New Jersey
-Riverside, California
-Edinburgh, United Kingdom
-Lisbon, Portugal
-Providence, Rhode Island
-Mumbai, Maharashtra
-St Petersburg, Russia
-Albuquerque, New Mexico
-Glasgow, United Kingdom
-Auckland, Greater Auckland
-Memphis, Tennessee
-Richmond, Virginia
-Kuala Lumpur, Malaysia
-Wellington, New Zealand
+Austin, Texas                           #104472865
+Miami, Florida                          #102394087
+Houston, Texas                          #103743442
+Oakland, California                     #105883676
+London, United Kingdom                  #102257491
+San Francisco, California               #90000084
+New York, United States                 #90000070
+Los Angeles, California                 #90000049
+Singapore, Singapore                    #102454443
+Boston, Massachusetts                   #102380872
+Paris, Ile-de-France                    #106383538
+Sydney, NSW                             #90009524
+Chicago, Illinois                       #
+Seoul, South Korea                      #
+Dallas-Fort Worth, Texas                #
+Berlin, Germany                         #
+Seattle, Washington                     #
+Tokyo, Japan                            #103925994
+Melbourne, VIC                          #
+Amsterdam, Netherlands                  #
+Vienna, Austria                         #
+Atlanta, Georgia                        #
+Munich, Germany                         #
+Dublin, Ireland                         #
+Montreal, Quebec                        #
+San Diego, California                   #
+Washington DC, District of Columbia     #
+Vancouver, British Columbia             #
+Stockholm, Sweden                       #
+Barcelona, Spain                        #
+Denver, Colorado                        #103736294
+Philadelphia, Pennsylvania              #
+Dubai, United Arab Emirates             #106204383
+Manchester, United Kingdom              #
+Oslo, Norway                            #
+Madrid, Spain                           #
+Copenhagen, Denmark                     #
+Milan, Italy                            #
+Portland, Oregon                        #
+Hamburg, Germany                        #
+Tel Aviv, Israel                        #                        
+Osaka, Osaka                            #
+Helsinki, Finland                       #106591199
+Rome, Italy                             #102334534
+Moscow, Russia                          #
+Dublin, Ireland                         #90009824
+Orlando, Florida                        #
+Las Vegas, Nevada                       #
+Baltimore, Maryland                     #
+Istanbul, Turkey                        #
+Brisbane, QLD                           #
+Frankfurt, Germany                      #
+Stuttgart, Germany                      #
+Quebec, Canada                          #102237789
+Sacramento, California                  #
+Taipei, Taiwan                          #
+Minneapolis-St Paul, Minnesota          #
+Athens, Greece                          #
+Prague, Central Bohemian Region         #
+Kyoto, Japan                            #105729854
+Dusseldorf, Germany                     #
+Lyon, Rhone-Alpes                       #
+Santa Ana-Anaheim, California           #
+Busan, South Korea                      #
+Abu Dhabi, United Arab Emirates         #
+Leipzig, Germany                        #
+Tampa, Florida                          #
+Cologne, Germany                        #
+Mexico City, Mexico                     #
+Budapest, Hungary                       #
+Pittsburgh, Pennsylvania                #
+Brussels, Belgium                       #
+Raleigh-Durham, North Carolina          #
+Kansas City, MI                         #
+Sao Paulo, Brazil                       #
+Detroit, Michigan                       #
+Phoenix, Arizona                        #
+Buenos Aires, Argentina                 #
+Salt Lake City, Utah                    #90000716
+Nashville, Tennessee                    #
+Zurich, Switzerland                     #102436504
+Calgary, Alberta                        #
+Newark, New Jersey                      #
+Riverside, California                   #101807624 
+Edinburgh, United Kingdom               #
+Lisbon, Portugal                        #
+Providence, Rhode Island                #106094923
+St Petersburg, Russia                   #
+Albuquerque, New Mexico                 #
+Glasgow, United Kingdom                 #
+Auckland, Greater Auckland              #104251235
+Memphis, Tennessee                      #
+Richmond, Virginia                      #   
+Wellington, New Zealand                 #103844754
+Toronto, Ontario                        #100025096
