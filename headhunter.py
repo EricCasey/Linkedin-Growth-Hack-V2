@@ -22,7 +22,8 @@ def keyboardInterruptHandler(signal, frame):
 signal.signal(signal.SIGINT, keyboardInterruptHandler)
 #######-####-#####-#################################################
 def save():
-    print("===== ENDING GRACEFULLY ==========")
+    # if there's an error save what's in the log variable to the json file for today
+    print("*********** ENDING GRACEFULLY *****************************")
     end_time = int(round(time.time() * 1000))
 
     log['runtime'] = log['runtime'] + ( end_time - start_time )
@@ -45,19 +46,16 @@ def check_log():
     print("- Log_Name: " + log['log_name'])
     current_log = "log-" + datetime.now().strftime("%d-%m-%Y") + ".json"
     if current_log == log['log_name']:
-        print(log['log_name'])
-        print("Current log is correct")
+        print("Current log is Correct")
     else:
-        print(log['log_name'])
-        print("Current log is wrong")
+        print("Current log is Wrong")
+        # TODO : 
 #######-####-#####-#################################################
 print("=========== Linkedin Social Engineering Script ============")
-print("      -------'IF YOU VIEW IT THEY WILL COME'-------        ")
+print("       -------'IF YOU VIEW IT THEY WILL COME'-------        ")
 # TODO : gracefully change logs at midnight
 
-print("=---- Downloading & Editing Chromedriver")
-
-# TODO : if not, download it
+print("=---- Checking for ./chromedriver")
 # TODO : edit file to make less recognizable to the site
 # https://stackoverflow.com/questions/33225947/can-a-website-detect-when-you-are-using-selenium-with-chromedriver
 if os.path.isfile("./chromedriver") is False:

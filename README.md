@@ -22,14 +22,18 @@ In 2014-ish I was looking for work and noticed that when I viewed a person's pro
 
 Anyway, the first iteration of this tool was [Galaxy-Screen-Scripts](https://github.com/EricCasey/Galaxy-Screen-Scripts) and was simply a thumb-recorded screen script using a program that was typically used at the time to make bots for Farmville. All I had to do was search for something like 'recruiter london', start the script, and it would view 1 profile every 2 seconds (to let the page load). It got me the 500+ then I stopped, in fear of getting banned.
 
-**This time though...** I'm going all in using what I've learned since then, and doing my best to document it.
+**This time though...** I'm going all in using what I've learned since then, and doing my best to document it. Maybe I'll make enough waves to get banned, maybe not.
 
 (If I have results they'll be in ./results.ipynb)
+
+### Recommendations
+
+Linkedin could mitigate this by...
 
 ### See It In Action
 
 <center>
-*gif here
+* gif here
 <img scr=""/>
 </center>
 
@@ -37,41 +41,49 @@ Anyway, the first iteration of this tool was [Galaxy-Screen-Scripts](https://git
 ### Results
 
 <center>
-* line graph here
+* line graph here, other vis
 <img scr=""/>
 </center>
 
 ### Contents
+
+Heads Up: files with * next to them you need to download yourself.
+
 ```python
 ./README.md                   # You're lookin' at it
 ./headhunter.py               # Main bot script
 ./results.ipynb               # Post-Mortem
 ./cities.txt                  # Custom list of cities to search in
 ./keywords.txt                # Custom list of keywords to search
+./chromedriver                # https://chromedriver.chromium.org/downloads
 ./logs/
     ./master_user_log.txt     # All users viewed so far
     ./template.json           # DB R\record T\template
-    ./log-dd-mm-yyyy.json     # Log of actions taken by day
+    ./log-dd-mm-yyyy.json   * # Log of actions taken by day
 ```
+
+
 
 ### Usage
 
-* Download Chromedriver for Selenium
+1. **`~$`**`git clone https://github.com/EricCasey/Linkedin-Growth-Hack-V2.git`
 
-`pip3 install json, time, shutil, signal, random, datetime, selenium`
+2. Download [Chromedriver](https://chromedriver.chromium.org/downloads) and put it in the project root.
 
-`~$ python3 ./headhunter.py <linkedin_email> <linkedin_password>`  
+3. **`~$`**`pip3 install json, time, shutil, signal, random, datetime, selenium`
 
-Then don't touch that computer or use Linkedin on other devices for a few weeks... I ran it on a Raspberry Pi connected to an old TV.
+4. **`~$`**`python3 ./headhunter.py <linkedin_email> <linkedin_password>`  
 
-
-
-<!-- 
-# !!! https://stackoverflow.com/questions/33225947/can-a-website-detect-when-you-are-using-selenium-with-chromedriver
-# https://en.wikipedia.org/wiki/List_of_towns_and_cities_with_100,000_or_more_inhabitants/country:_C
-# https://www.linkedin.com/search/results/all/?keywords=recruiter&origin=GLOBAL_SEARCH_HEADER
-# https://www.linkedin.com/search/results/people/?facetNetwork=%5B%22O%22%5D&facetProfileLanguage=%5B%22en%22%2C%22fr%22%5D&keywords=recruiter&origin=FACETED_SEARCH
-# https://www.linkedin.com/search/results/people/?facetNetwork=%5B%22O%22%5D&facetProfileLanguage=%5B%22en%22%2C%22fr%22%5D&keywords=recruiter%2C%20acquisition&origin=GLOBAL_SEARCH_HEADER&page=2 -->
+5. Then don't touch that computer or use Linkedin on other devices for a few weeks... I ran it on a Raspberry Pi connected to an old TV.
+6. ???
+7. Profit
 
 
+
+### Appendix
+
+Here are some of the pages I found useful while putting this together:
+
+* https://stackoverflow.com/questions/33225947/can-a-website-detect-when-you-are-using-selenium-with-chromedriver
+* https://en.wikipedia.org/wiki/List_of_towns_and_cities_with_100,000_or_more_inhabitants/country:_C
 
