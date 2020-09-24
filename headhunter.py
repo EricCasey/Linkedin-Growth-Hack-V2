@@ -82,7 +82,7 @@ todays_log = "log-" + date + ".json"
 if os.path.isfile("./" + todays_log) is False:
     print("=- Creating A New Log For Today.")
     log_path = "./logs/" + todays_log
-    shutil.copy("./logs/template.json", log_path) 
+    shutil.copy("./template.json", log_path) 
 else:
     print("=- Log Exists, Loading it")
 
