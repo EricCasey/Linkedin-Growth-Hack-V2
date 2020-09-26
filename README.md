@@ -70,11 +70,11 @@ Heads Up: files with * next to them you need to download yourself.
 
 2. Download the correct [Chromedriver](https://chromedriver.chromium.org/downloads) for your version of Chrome and put it in the project root.
 
-3. **`~$`**`pip3 install json, time, shutil, signal, random, datetime, selenium`
+3. **`~$`**`pip3 install shutil signal random datetime selenium`
 
-4. **`~$`**`python3 ./headhunter.py <linkedin_email> <linkedin_password>`  
+4. **`~$`**`python3 ./headhunter.py <linkedin_email> <linkedin_password> <speed>`  
 
-
+* Use `apt-get install chromium-driver` on and ARM chip (rpi)
 
 
 ### Appendix
