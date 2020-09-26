@@ -176,7 +176,7 @@ def heck():
             batch.extend(users)
             print("- " + str(len(batch)) + " Users in this batch so far.")
 
-            for page in range(2, 3):  # page_count
+            for page in range(2, page_count):  # page_count
                 print("=--- Page " + str(page) + " ----")
                 page_url = query_url + "&page=" + str(page)
                 browser.get(page_url)
