@@ -1,4 +1,4 @@
-import os, sys, json, time, tqdm, shutil, signal, random
+import os, sys, json, time, shutil, signal, random
 
 import datetime
 from datetime import datetime, timedelta
