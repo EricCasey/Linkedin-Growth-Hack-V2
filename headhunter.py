@@ -149,9 +149,14 @@ def heck():
             browser.get(city_slug)
 
             hol_up(delay)
-            browser.execute_script("document.getElementById('msg-overlay').style.display = 'none';")                       # Close Chat
-            browser.find_element_by_xpath('/html/body/div[7]/header/div[2]/div/div/div[1]/div/input').send_keys(keyword)
-            browser.find_element_by_xpath('/html/body/div[7]/header/div[2]/div/div/div[1]/div/input').send_keys(Keys.RETURN)   # Input keyword
+            browser.execute_script("document.getElementById('msg-overlay').style.display = 'none';")
+            try:                       # Close Chat
+                browser.find_element_by_xpath('/html/body/div[7]/header/div[2]/div/div/div[1]/div/input').send_keys(keyword)
+                browser.find_element_by_xpath('/html/body/div[7]/header/div[2]/div/div/div[1]/div/input').send_keys(Keys.RETURN)
+            except: 
+                browser.find_element_by_xpath('/html/body/div[8]/header/div[2]/div/div/div[1]/div/input').send_keys(keyword)
+                browser.find_element_by_xpath('/html/body/div[8]/header/div[2]/div/div/div[1]/div/input').send_keys(Keys.RETURN)
+                  # Input keyword
             # browser.find_element_by_class_name('search-global-typeahead__button').click()                                  # Click search button
             hol_up(delay)
             
