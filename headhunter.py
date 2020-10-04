@@ -24,7 +24,7 @@ signal.signal(signal.SIGINT, keyboardInterruptHandler)
 #######-####-#####-#################################################
 def save():
     # if there's an error save what's in the log variable to the json file for today
-    print("*********** ENDING GRACEFULLY *****************************")
+    print("*********** ERR - ENDING GRACEFULLY ************************")
     end_time = int(round(time.time() * 1000))
 
     log['runtime'] = log['runtime'] + ( end_time - start_time )
@@ -150,8 +150,9 @@ def heck():
 
             hol_up(delay)
             browser.execute_script("document.getElementById('msg-overlay').style.display = 'none';")                       # Close Chat
-            browser.find_element_by_xpath('/html/body/div[7]/header/div[2]/div/div/div[1]/div/input').send_keys(keyword)   # Input keyword
-            browser.find_element_by_class_name('search-global-typeahead__button').click()                                  # Click search button
+            browser.find_element_by_xpath('/html/body/div[7]/header/div[2]/div/div/div[1]/div/input').send_keys(keyword)
+            browser.find_element_by_xpath('/html/body/div[7]/header/div[2]/div/div/div[1]/div/input').send_keys(Keys.RETURN)   # Input keyword
+            # browser.find_element_by_class_name('search-global-typeahead__button').click()                                  # Click search button
             hol_up(delay)
             
             res_count = browser.find_element_by_class_name('search-results__total').text.split(" ")[1]
