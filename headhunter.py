@@ -9,13 +9,16 @@ from selenium.webdriver.common.keys import Keys
 ####################################################################
 # pls don't use this to bother anyone.
 ####################################################################
-if(len(sys.argv) != 4):
-    print("Usage: ~$ python3 ./headhunter.py <linkedin_email> <linkedin_password> <delay_in_seconds>")
+if(len(sys.argv) != 5):
+    print("Usage: ~$ python3 ./headhunter.py <linkedin_email> <linkedin_password> <delay_in_seconds> <max_page_depth>")
+    print("Usage: ~$ ------- --------------- ---------------- ------------------- 2s minimum ------- 1-100 pgs ------")
+    print("EXAMPLE:  python3 ./headhunter.py mailbox@domain.tld mylinkedinpassword 5 100")
     exit()
 else:
     u = list(sys.argv)[1]
     p = list(sys.argv)[2]
     delay = int(list(sys.argv)[3])
+    depth = int(list(sys.argv)[4])
 #######-####-#####-#################################################
 def keyboardInterruptHandler(signal, frame):
     save()
@@ -150,20 +153,21 @@ def heck():
 
             hol_up(delay)
             browser.execute_script("document.getElementById('msg-overlay').style.display = 'none';")
-            try:                       # Close Chat
+            try:    # LI UI: Oct 2020 / Macbook Pro / Catalina / Chromium v
                 browser.find_element_by_xpath('/html/body/div[7]/header/div[2]/div/div/div[1]/div/input').send_keys(keyword)
                 browser.find_element_by_xpath('/html/body/div[7]/header/div[2]/div/div/div[1]/div/input').send_keys(Keys.RETURN)
-            except: 
+            except: # LI UI: Oct 2020 / Raspberry Pi 2 / Chromium v
                 browser.find_element_by_xpath('/html/body/div[8]/header/div[2]/div/div/div[1]/div/input').send_keys(keyword)
-                browser.find_element_by_xpath('/html/body/div[8]/header/div[2]/div/div/div[1]/div/input').send_keys(Keys.RETURN)
-                  # Input keyword
-            # browser.find_element_by_class_name('search-global-typeahead__button').click()                                  # Click search button
+                browser.find_element_by_xpath('/html/body/div[8]/header/div[2]/div/div/div[1]/div/input').send_keys(Keys.RETURN)                              # Click search button
             hol_up(delay)
             
             res_count = browser.find_element_by_class_name('search-results__total').text.split(" ")[1]
             page_count = 100
             if int(res_count.replace(",","")) < 100: 
                 page_count = res_count / 10
+
+            if int(res_count.replace(",","")) > depth:
+                page_count = depth
 
             print("- " + str(res_count) + " Results For '" + keyword + "' in '" + city.split("#")[0].replace(" ", "") + "'.")
             print("- " + str(page_count) + " Pages of Results")
@@ -192,11 +196,12 @@ def heck():
                 links = browser.find_elements_by_xpath("//a[@href]")
                 users = links_2_users(links)
                 batch.extend(users)
+                print("- " + str(len(batch)) + " Users in this batch so far.")
                 hol_up(delay)
             
             # print("===== Viewing Each Profile In This Batch")
             # print("- " + str(len(batch)) + " Usernames Connected in this batch")
-        
+
             for usr in batch:
                 
                 if usr not in log['users'] and usr not in master_users:
@@ -204,6 +209,7 @@ def heck():
                     browser.get("https://www.linkedin.com/in/" + usr + "/")
                     log['users'].append(usr)
                     master_users.append(usr)
+                    print("=-- Profiles Viewed In This Session: " + str(len(master_users)))
                     log['cities'][city.split("#")[1].replace(" ", "")] += 1
                     hol_up(delay)   
 #######-####-#####-#################################################
