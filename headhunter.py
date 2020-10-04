@@ -207,7 +207,7 @@ print('=========== STARTING HECK =================================')
 start_time = int(round(time.time() * 1000))
 browser = webdriver.Chrome(executable_path="./chromedriver")
 login()
-try:
-    heck()
-except:
-    save()
+# try:
+heck()
+# except:
+save()
