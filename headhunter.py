@@ -43,6 +43,10 @@ def save():
         for user in master_users:
             fp.write('%s\n' % user)
 
+    with open("./logs/master_query_log.txt", 'w') as fp:
+        for query in master_queries:
+            fp.write('%s\n' % query)
+
     browser.quit()
 #######-####-#####-#################################################
 def check_log():
@@ -77,6 +81,11 @@ print("=---- Loading User List")
 text_file = open("./logs/master_user_log.txt", "r").read()
 master_users = text_file.splitlines()
 print("- " + str(len(master_users)) + " Users Loaded.")
+#######-####-#####-#################################################
+print("=---- Loading Query List")
+text_file = open("./logs/master_query_log.txt", "r").read()
+master_queries = text_file.splitlines()
+print("- " + str(len(master_queries)) + " Queries Already Completed.")
 #######-####-#####-#################################################
 print("=---- Loading Log")
 date = datetime.now().strftime("%d-%m-%Y")
@@ -127,9 +136,15 @@ def links_2_users(links):
     print("- " + str(len(usernames)) + " Usernames extracted.")
     return usernames
 #######-####-#####-#################################################
+def check_query(city_id, keyword):
+    query = city_id + "-" + keyword 
+    if query not in log['queries'] and query not in master_queries:
+        log['queries'].append(query)
+#######-####-#####-#################################################
 def add_query(city_id, keyword):
-    if city_id + "-" + keyword not in log['queries']:
-        log['queries'].append(city_id + "-" + keyword)
+    query = city_id + "-" + keyword 
+    master_queries.append(query)
+    save()
 #######-####-#####-#################################################
 def login():
     browser.get("https://www.linkedin.com/login")
@@ -147,7 +162,7 @@ def heck():
         for keyword in keywords:
 
             check_log()
-            add_query(city_id, keyword)
+            check_query(city_id, keyword)
 
             browser.get(city_slug)
 
@@ -156,7 +171,7 @@ def heck():
             try:    # LI UI: Oct 2020 / Macbook Pro / Catalina / Chromium v
                 browser.find_element_by_xpath('/html/body/div[7]/header/div[2]/div/div/div[1]/div/input').send_keys(keyword)
                 browser.find_element_by_xpath('/html/body/div[7]/header/div[2]/div/div/div[1]/div/input').send_keys(Keys.RETURN)
-            except: # LI UI: Oct 2020 / Raspberry Pi 2 / Chromium v
+            except: # LI UI: Oct 2020 / Raspberry Pi 2 / Raspi 5.4.52-v7 / Chromium v83
                 browser.find_element_by_xpath('/html/body/div[8]/header/div[2]/div/div/div[1]/div/input').send_keys(keyword)
                 browser.find_element_by_xpath('/html/body/div[8]/header/div[2]/div/div/div[1]/div/input').send_keys(Keys.RETURN)                              # Click search button
             hol_up(delay)
@@ -211,7 +226,9 @@ def heck():
                     master_users.append(usr)
                     print("=-- Profiles Viewed In This Session: " + str(len(master_users)))
                     log['cities'][city.split("#")[1].replace(" ", "")] += 1
-                    hol_up(delay)   
+                    hol_up(delay)
+            
+            add_query(city_id, keyword)
 #######-####-#####-#################################################
 print('=========== STARTING HECK =================================')
 

@@ -10,86 +10,86 @@ Singapore, Singapore                    #102454443
 Boston, Massachusetts                   #102380872
 Paris, Ile-de-France                    #106383538
 Sydney, NSW                             #90009524
-Chicago, Illinois                       #
-Seoul, South Korea                      #
-Dallas-Fort Worth, Texas                #
-Berlin, Germany                         #
-Seattle, Washington                     #
+Chicago, Illinois                       #103112676
+Seoul, South Korea                      #103588929
+Dallas-Fort Worth, Texas                #104194190
+Berlin, Germany                         #103035651
+Seattle, Washington                     #104116203
 Tokyo, Japan                            #103925994
-Melbourne, VIC                          #
-Amsterdam, Netherlands                  #
-Vienna, Austria                         #
-Atlanta, Georgia                        #
-Munich, Germany                         #
-Dublin, Ireland                         #
-Montreal, Quebec                        #
-San Diego, California                   #
-Washington DC, District of Columbia     #
-Vancouver, British Columbia             #
-Stockholm, Sweden                       #
-Barcelona, Spain                        #
+Melbourne, VIC                          #100992797
+Amsterdam, Netherlands                  #102011674
+Vienna, Austria                         #107144641
+Atlanta, Georgia                        #106224388
+Munich, Germany                         #90009735
+Dublin, Ireland                         #103810046
+Montreal, Quebec                        #101728226
+San Diego, California                   #103918656
+Washington DC, District of Columbia     #104383890
+Vancouver, British Columbia             #103366113
+Stockholm, Sweden                       #104853962
+Barcelona, Spain                        #105088894
 Denver, Colorado                        #103736294
-Philadelphia, Pennsylvania              #
+Philadelphia, Pennsylvania              #104937023
 Dubai, United Arab Emirates             #106204383
-Manchester, United Kingdom              #
-Oslo, Norway                            #
-Madrid, Spain                           #
-Copenhagen, Denmark                     #
-Milan, Italy                            #
-Portland, Oregon                        #
-Hamburg, Germany                        #
-Tel Aviv, Israel                        #                        
-Osaka, Osaka                            #
+Manchester, United Kingdom              #90009497
+Oslo, Norway                            #105719246
+Madrid, Spain                           #100994331
+Copenhagen, Denmark                     #90009617
+Milan, Italy                            #102873640
+Portland, Oregon                        #104727230
+Hamburg, Germany                        #101949806
+Tel Aviv, Israel                        #104243116
+Osaka, Osaka                            #106529924
 Helsinki, Finland                       #106591199
 Rome, Italy                             #102334534
-Moscow, Russia                          #
+Moscow, Russia                          #104994045
 Dublin, Ireland                         #90009824
-Orlando, Florida                        #
-Las Vegas, Nevada                       #
-Baltimore, Maryland                     #
-Istanbul, Turkey                        #
-Brisbane, QLD                           #
-Frankfurt, Germany                      #
-Stuttgart, Germany                      #
+Orlando, Florida                        #105142029
+Las Vegas, Nevada                       #90000412
+Baltimore, Maryland                     #106330734
+Istanbul, Turkey                        #102424322
+Brisbane, QLD                           #104468365
+Frankfurt, Germany                      #90009714
+Stuttgart, Germany                      #90009750
 Quebec, Canada                          #102237789
-Sacramento, California                  #
-Taipei, Taiwan                          #
-Minneapolis-St Paul, Minnesota          #
-Athens, Greece                          #
-Prague, Central Bohemian Region         #
+Sacramento, California                  #101857797
+Taipei, Taiwan                          #101193466
+Minneapolis-St Paul, Minnesota          #103039849
+Athens, Greece                          #103077496
+Prague, Central Bohemian Region         #106156085
 Kyoto, Japan                            #105729854
-Dusseldorf, Germany                     #
-Lyon, Rhone-Alpes                       #
-Santa Ana-Anaheim, California           #
-Busan, South Korea                      #
-Abu Dhabi, United Arab Emirates         #
-Leipzig, Germany                        #
-Tampa, Florida                          #
-Cologne, Germany                        #
-Mexico City, Mexico                     #
-Budapest, Hungary                       #
-Pittsburgh, Pennsylvania                #
-Brussels, Belgium                       #
-Raleigh-Durham, North Carolina          #
-Kansas City, MI                         #
-Sao Paulo, Brazil                       #
-Detroit, Michigan                       #
-Phoenix, Arizona                        #
-Buenos Aires, Argentina                 #
+Dusseldorf, Germany                     #90009721
+Lyon, Rhone-Alpes                       #103815258
+Santa Ana-Anaheim, California           #104575067
+Busan, South Korea                      #100106396
+Abu Dhabi, United Arab Emirates         #103720977
+Leipzig, Germany                        #90009733
+Tampa, Florida                          #105517665
+Cologne, Germany                        #102426246
+Mexico City, Mexico                     #90010045
+Budapest, Hungary                       #106079947
+Pittsburgh, Pennsylvania                #101351937
+Brussels, Belgium                       #90009604
+Raleigh-Durham, North Carolina          #90000664
+Kansas City, MI                         #104403803
+Sao Paulo, Brazil                       #105871508
+Detroit, Michigan                       #90000035
+Phoenix, Arizona                        #100219842
+Buenos Aires, Argentina                 #101279968
 Salt Lake City, Utah                    #90000716
-Nashville, Tennessee                    #
+Nashville, Tennessee                    #103250458
 Zurich, Switzerland                     #102436504
-Calgary, Alberta                        #
-Newark, New Jersey                      #
+Calgary, Alberta                        #102199904
+Newark, New Jersey                      #103913444
 Riverside, California                   #101807624 
-Edinburgh, United Kingdom               #
-Lisbon, Portugal                        #
+Edinburgh, United Kingdom               #90009485
+Lisbon, Portugal                        #102775852
 Providence, Rhode Island                #106094923
-St Petersburg, Russia                   #
-Albuquerque, New Mexico                 #
-Glasgow, United Kingdom                 #
+St Petersburg, Russia                   #106686604
+Albuquerque, New Mexico                 #104055874
+Glasgow, United Kingdom                 #90009487
 Auckland, Greater Auckland              #104251235
-Memphis, Tennessee                      #
-Richmond, Virginia                      #   
+Memphis, Tennessee                      #100420597
+Richmond, Virginia                      #102114334
 Wellington, New Zealand                 #103844754
 Toronto, Ontario                        #100025096
