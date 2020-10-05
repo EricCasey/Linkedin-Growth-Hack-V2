@@ -153,6 +153,8 @@ def login():
     in_pass = browser.find_element_by_id("password")
     in_pass.send_keys(p)
     in_pass.send_keys(Keys.ENTER)
+def check_sec():
+    print('checking for security string')
 #######-####-#####-#################################################
 def heck():
     for city in cities:
@@ -165,6 +167,8 @@ def heck():
             check_query(city_id, keyword)
 
             browser.get(city_slug)
+
+            check_sec()
 
             hol_up(delay)
             browser.execute_script("document.getElementById('msg-overlay').style.display = 'none';")

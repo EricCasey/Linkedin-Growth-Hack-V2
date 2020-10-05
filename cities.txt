@@ -1,3 +1,4 @@
+Toronto, Ontario                        #100025096
 Austin, Texas                           #104472865
 Miami, Florida                          #102394087
 Houston, Texas                          #103743442
@@ -92,4 +93,3 @@ Auckland, Greater Auckland              #104251235
 Memphis, Tennessee                      #100420597
 Richmond, Virginia                      #102114334
 Wellington, New Zealand                 #103844754
-Toronto, Ontario                        #100025096
