@@ -153,8 +153,10 @@ def login():
     in_pass = browser.find_element_by_id("password")
     in_pass.send_keys(p)
     in_pass.send_keys(Keys.ENTER)
+#######-####-#####-#################################################
 def check_sec():
     print('checking for security string')
+    
 #######-####-#####-#################################################
 def heck():
     for city in cities:
@@ -226,6 +228,9 @@ def heck():
                 if usr not in log['users'] and usr not in master_users:
                     hol_up(delay)
                     browser.get("https://www.linkedin.com/in/" + usr + "/")
+
+                    ## 'Let's Do A Quick Security Check'
+
                     log['users'].append(usr)
                     master_users.append(usr)
                     print("=-- Profiles Viewed In This Session: " + str(len(master_users)))

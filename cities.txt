@@ -1,3 +1,4 @@
+Denver, Colorado                        #103736294
 Toronto, Ontario                        #100025096
 Austin, Texas                           #104472865
 Miami, Florida                          #102394087
@@ -29,7 +30,6 @@ Washington DC, District of Columbia     #104383890
 Vancouver, British Columbia             #103366113
 Stockholm, Sweden                       #104853962
 Barcelona, Spain                        #105088894
-Denver, Colorado                        #103736294
 Philadelphia, Pennsylvania              #104937023
 Dubai, United Arab Emirates             #106204383
 Manchester, United Kingdom              #90009497
