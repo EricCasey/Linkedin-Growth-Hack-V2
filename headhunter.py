@@ -1,4 +1,4 @@
-import os, sys, json, time, shutil, signal, random
+import os, sys, json, time, tqdm, shutil, signal, random
 
 import datetime
 from datetime import datetime, timedelta
@@ -115,7 +115,8 @@ for city in cities:
             log['cities'][city.split("#")[1].replace(" ", "")] = 0
     except KeyError:
         log['cities'][city.split("#")[1].replace(" ", "")] = 0
-
+#######-####-#####-#################################################
+session_view_count = 0
 #######-####-#####-#################################################
 # Search URL Setup
 profile_languages = '["en","fr"]'   # tea & baguette
@@ -154,9 +155,17 @@ def login():
     in_pass.send_keys(p)
     in_pass.send_keys(Keys.ENTER)
 #######-####-#####-#################################################
-def check_sec():
+def check_sec(html, url):
     print('checking for security string')
-    
+    print("Let's Do A Quick Security Check")
+    if "Let's Do A Quick Security Check" in html:
+        alert = "RED ALERT"
+        try: 
+            os.system('spd-say ' + alert)
+        except:
+            os.system('say ' + alert)
+
+    ## TODO: HOLD UNTIL HUMAN INPUT, WAIT, THEN RETURN TO HECK
 #######-####-#####-#################################################
 def heck():
     for city in cities:
@@ -170,7 +179,7 @@ def heck():
 
             browser.get(city_slug)
 
-            check_sec()
+            check_sec(browser.page_source, city_slug)
 
             hol_up(delay)
             browser.execute_script("document.getElementById('msg-overlay').style.display = 'none';")
@@ -200,43 +209,44 @@ def heck():
             query_url = browser.current_url
             batch = []
     
-            print("===== Collecting Usernames From Query")
-            print("=--- Page 1 ----")
+            # print("===== Collecting Usernames From Query")
+            # print("=--- Page 1 ----")
 
             links = browser.find_elements_by_xpath("//a[@href]")
             users = links_2_users(links)
             batch.extend(users)
-            print("- " + str(len(batch)) + " Users in this batch so far.")
+            # print("- " + str(len(batch)) + " Users in this batch so far.")
 
-            for page in range(2, page_count):  # page_count
-                print("=--- Page " + str(page) + " ----")
+            for page in tqdm(range(2, page_count)):  # page_count
+                # print("=--- Page " + str(page) + " ----")
                 page_url = query_url + "&page=" + str(page)
                 browser.get(page_url)
+                check_sec(browser.page_source, page_url)
                 hol_up(delay)
                 browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
                 links = browser.find_elements_by_xpath("//a[@href]")
                 users = links_2_users(links)
                 batch.extend(users)
-                print("- " + str(len(batch)) + " Users in this batch so far.")
+                # print("- " + str(len(batch)) + " Users in this batch so far.")
                 hol_up(delay)
             
             # print("===== Viewing Each Profile In This Batch")
             # print("- " + str(len(batch)) + " Usernames Connected in this batch")
 
-            for usr in batch:
-                
+            for c in tqdm(range(0, len(batch)):
+                usr = batch[c]
                 if usr not in log['users'] and usr not in master_users:
                     hol_up(delay)
                     browser.get("https://www.linkedin.com/in/" + usr + "/")
-
-                    ## 'Let's Do A Quick Security Check'
-
+                    check_sec(browser.page_source, "https://www.linkedin.com/in/" + usr + "/")
                     log['users'].append(usr)
                     master_users.append(usr)
-                    print("=-- Profiles Viewed In This Session: " + str(len(master_users)))
+                    # print("=-- Profiles Viewed In This Session: " + str(len(master_users)))
                     log['cities'][city.split("#")[1].replace(" ", "")] += 1
                     hol_up(delay)
-            
+                    session_view_count += 1
+                    print(session_view_count)
+
             add_query(city_id, keyword)
 #######-####-#####-#################################################
 print('=========== STARTING HECK =================================')
