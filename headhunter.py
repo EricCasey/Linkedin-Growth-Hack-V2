@@ -107,7 +107,7 @@ log["log_name"] = "log-" + date + ".json"
 print("=---- Loading Cities")
 text_file = open("./cities.txt", "r").read()
 cities = text_file.splitlines()
-print("-" + str(len(cities)) + " Cities Loaded.")
+print("- " + str(len(cities)) + " Cities Loaded.")
 
 for city in cities:
     try:
@@ -217,7 +217,7 @@ def heck():
             batch.extend(users)
             # print("- " + str(len(batch)) + " Users in this batch so far.")
 
-            for page in tqdm(range(2, page_count)):  # page_count
+            for page in tqdm(range(2, len(page_count))):  # page_count
                 # print("=--- Page " + str(page) + " ----")
                 page_url = query_url + "&page=" + str(page)
                 browser.get(page_url)
