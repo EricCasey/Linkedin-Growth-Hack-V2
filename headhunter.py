@@ -233,7 +233,7 @@ def heck():
             # print("===== Viewing Each Profile In This Batch")
             # print("- " + str(len(batch)) + " Usernames Connected in this batch")
 
-            for c in tqdm(range(0, len(batch)):
+            for c in tqdm(range(0, len(batch))):
                 usr = batch[c]
                 if usr not in log['users'] and usr not in master_users:
                     hol_up(delay)
