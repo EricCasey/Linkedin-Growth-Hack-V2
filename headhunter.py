@@ -118,8 +118,6 @@ for city in cities:
     except KeyError:
         log['cities'][city.split("#")[1].replace(" ", "")] = 0
 #######-####-#####-#################################################
-session_view_count = 0
-#######-####-#####-#################################################
 # Search URL Setup
 profile_languages = '["en","fr"]'   # tea & baguette
 connection_degree = '["O"]'         # 3rd deg connections only
@@ -136,7 +134,7 @@ def links_2_users(links):
             username = link.get_attribute("href").replace("https://www.linkedin.com/in/", "").replace("/", "")
             if username not in usernames:
                 usernames.append(username)
-    print("- " + str(len(usernames)) + " Usernames extracted.")
+    # print("- " + str(len(usernames)) + " Usernames extracted.")
     return usernames
 #######-####-#####-#################################################
 def check_query(city_id, keyword):
@@ -170,6 +168,7 @@ def check_sec(html, url):
     ## TODO: HOLD UNTIL HUMAN INPUT, WAIT, THEN RETURN TO HECK
 #######-####-#####-#################################################
 def heck():
+    session_view_count = 0
     for city in cities:
         city_id = city.split("#")[1].replace(" ", "")
         city_slug = search_slug + '&facetGeoUrn=%5b"' + city_id + '"%5D'
