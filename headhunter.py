@@ -56,9 +56,9 @@ def check_log():
     print("- Log_Name: " + log['log_name'])
     current_log = "log-" + datetime.now().strftime("%d-%m-%Y") + ".json"
     if current_log == log['log_name']:
-        print("Current log is Correct")
+        print("Current log is Correct.")
     else:
-        print("Current log is Wrong")
+        print("Current log is Wrong.")
         # TODO : 
 #######-####-#####-#################################################
 print("=========== Linkedin Social Engineering Script ============")
@@ -91,15 +91,15 @@ print("- " + str(len(master_queries)) + " Queries Already Completed.")
 #######-####-#####-#################################################
 print("=---- Loading Log")
 date = datetime.now().strftime("%d-%m-%Y")
-print("=- Today's Date: " + date)
+print("- Today's Date: " + date)
 todays_log = "log-" + date + ".json"
 
 if os.path.isfile("./" + todays_log) is False:
-    print("=- Creating A New Log For Today.")
+    print("- Creating A New Log For Today.")
     log_path = "./logs/" + todays_log
     shutil.copy("./template.json", log_path) 
 else:
-    print("=- Log Exists, Loading it")
+    print("- Log Exists, Loading it")
 
 with open("./logs/" + todays_log) as json_file: 
     log = json.load(json_file) 
@@ -158,8 +158,8 @@ def login():
     in_pass.send_keys(Keys.ENTER)
 #######-####-#####-#################################################
 def check_sec(html, url):
-    print('checking for security string')
-    print("Let's Do A Quick Security Check")
+    # print('checking for security string')
+    # print("Let's Do A Quick Security Check")
     if "Let's Do A Quick Security Check" in html:
         alert = "RED ALERT"
         try: 
