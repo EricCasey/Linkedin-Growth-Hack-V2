@@ -29,7 +29,9 @@ The first iteration of this tool was [Galaxy-Screen-Scripts](https://github.com/
 
 ### Recommendations
 
-Linkedin could mitigate this by setting a internal limit of notifications sent to users stemming from a single user.
+Linkedin could mitigate this by setting a internal limit of notifications sent to users stemming from a single user. 
+
+There are some gateways with Captcha filters for bots but as long as you don't login to Linkedin on your phone or primary computer then you don't appear to be detected (using a 20s <speed>). After you run this you'll get a the captcha page next time you login (So LI is checking if you're a robot AFTER your robot is done it's job).
 
 ### See It In Action
 
@@ -40,10 +42,19 @@ Linkedin could mitigate this by setting a internal limit of notifications sent t
 
 ### Results
 
+
 <center>
-* line graph here, other vis
-<img scr=""/>
+<h2>First Few Days (2020-10-07)</h2>
+<img src="img/li_1.png"/>
 </center>
+
+
+<center>
+* line graph from notebook here, other vis
+<img src=""/>
+</center>
+
+
 
 ### Contents
 
@@ -73,8 +84,8 @@ Heads Up: files with * next to them you need to download yourself.
 
 3. **`~$`**`pip3 install shutil signal random datetime selenium`
 
-4. **`~$`**`python3 ./headhunter.py <linkedin_email> <linkedin_password> <speed>`  
+4. **`~$`**`python3 ./headhunter.py <linkedin_email> <linkedin_password> <speed> <depth>`  
 
-
+Currently Using: **`~$`**`python3 ./headhunter.py email@email.mail password 20 100`
 <!-- * https://stackoverflow.com/questions/33225947/can-a-website-detect-when-you-are-using-selenium-with-chromedriver -->
 
