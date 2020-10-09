@@ -1,3 +1,4 @@
+Montreal, Quebec                        #101728226
 Dublin, Ireland                         #103810046
 Denver, Colorado                        #103736294
 Toronto, Ontario                        #100025096
@@ -24,7 +25,6 @@ Amsterdam, Netherlands                  #102011674
 Vienna, Austria                         #107144641
 Atlanta, Georgia                        #106224388
 Munich, Germany                         #90009735
-Montreal, Quebec                        #101728226
 San Diego, California                   #103918656
 Washington DC, District of Columbia     #104383890
 Vancouver, British Columbia             #103366113
