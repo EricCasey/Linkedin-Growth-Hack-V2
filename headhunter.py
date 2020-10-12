@@ -246,7 +246,7 @@ def heck():
                     log['cities'][city.split("#")[1].replace(" ", "")] += 1
                     hol_up(delay)
                     session_view_count += 1
-                    print(session_view_count)
+                    # print(session_view_count)
 
             add_query(city_id, keyword)
 #######-####-#####-#################################################
