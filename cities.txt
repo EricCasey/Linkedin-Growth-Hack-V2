@@ -1,3 +1,4 @@
+Edinburgh, United Kingdom               #90009485
 Sacramento, California                  #101857797
 Montreal, Quebec                        #101728226
 Dublin, Ireland                         #103810046
@@ -83,7 +84,6 @@ Zurich, Switzerland                     #102436504
 Calgary, Alberta                        #102199904
 Newark, New Jersey                      #103913444
 Riverside, California                   #101807624 
-Edinburgh, United Kingdom               #90009485
 Lisbon, Portugal                        #102775852
 Providence, Rhode Island                #106094923
 St Petersburg, Russia                   #106686604
