@@ -1,13 +1,11 @@
 import os, sys, json, time, shutil, signal, random
-
 import datetime
 from datetime import datetime, timedelta
-
 from tqdm import tqdm
-
 import selenium
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
 ####################################################################
 # pls don't use this to bother anyone.
 ####################################################################
@@ -65,10 +63,10 @@ print("=========== Linkedin Social Engineering Script ============")
 print("       -------'IF YOU VIEW IT THEY WILL COME'-------        ")
 # TODO : gracefully change logs at midnight
 
-print("=---- Checking for ./chromedriver")
+print("=---- Checking for ./chromedriver.exe")
 # TODO : edit file to make less recognizable to the site
 # https://stackoverflow.com/questions/33225947/can-a-website-detect-when-you-are-using-selenium-with-chromedriver
-if os.path.isfile("./chromedriver") is False:
+if os.path.isfile("./chromedriver.exe") is False:
     print("- CHOMEDRIVER IS NOT INSTALLED! Get it here: https://chromedriver.chromium.org/downloads")
     exit(0)
 else:
@@ -149,9 +147,9 @@ def add_query(city_id, keyword):
 #######-####-#####-#################################################
 def login():
     browser.get("https://www.linkedin.com/login")
-    in_user = browser.find_element_by_id("username")
+    in_user = browser.find_element(By.ID, "username")
     in_user.send_keys(u)
-    in_pass = browser.find_element_by_id("password")
+    in_pass = browser.find_element(By.ID, "password")
     in_pass.send_keys(p)
     in_pass.send_keys(Keys.ENTER)
 #######-####-#####-#################################################
@@ -185,14 +183,14 @@ def heck():
             hol_up(delay)
             browser.execute_script("document.getElementById('msg-overlay').style.display = 'none';")
             try:    # LI UI: Oct 2020 / Macbook Pro / Catalina / Chromium v
-                browser.find_element_by_xpath('/html/body/div[7]/header/div[2]/div/div/div[1]/div/input').send_keys(keyword)
-                browser.find_element_by_xpath('/html/body/div[7]/header/div[2]/div/div/div[1]/div/input').send_keys(Keys.RETURN)
+                browser.find_element(By.XPATH, '/html/body/div[7]/header/div[2]/div/div/div[1]/div/input').send_keys(keyword)
+                browser.find_element(By.XPATH, '/html/body/div[7]/header/div[2]/div/div/div[1]/div/input').send_keys(Keys.RETURN)
             except: # LI UI: Oct 2020 / Raspberry Pi 2 / Raspi 5.4.52-v7 / Chromium v83
-                browser.find_element_by_xpath('/html/body/div[8]/header/div[2]/div/div/div[1]/div/input').send_keys(keyword)
-                browser.find_element_by_xpath('/html/body/div[8]/header/div[2]/div/div/div[1]/div/input').send_keys(Keys.RETURN)                              # Click search button
+                browser.find_element(By.XPATH, '/html/body/div[8]/header/div[2]/div/div/div[1]/div/input').send_keys(keyword)
+                browser.find_element(By.XPATH, '/html/body/div[8]/header/div[2]/div/div/div[1]/div/input').send_keys(Keys.RETURN)                              # Click search button
             hol_up(delay)
             
-            res_count = browser.find_element_by_class_name('search-results__total').text.split(" ")[1]
+            res_count = browser.find_element(By.CLASS_NAME, 'search-results__total').text.split(" ")[1]
             page_count = 100
             if int(res_count.replace(",","")) < 100: 
                 page_count = res_count / 10
@@ -253,7 +251,7 @@ def heck():
 print('=========== STARTING HECK =================================')
 
 start_time = int(round(time.time() * 1000))
-browser = webdriver.Chrome(executable_path="./chromedriver")
+browser = webdriver.Chrome(executable_path="./chromedriver.exe")
 login()
 try:
     heck()
